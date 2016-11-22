@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ConjunctiveRule -N 3 -M 2.0 -P -1 -S 1
+Relation:     pima_diabetes
+Instances:    768
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+
+
+Single conjunctive rule learner:
+--------------------------------
+(plas <= 127.5) => class = tested_negative
+
+Class distributions:
+Covered by the rule:
+tested_negative	tested_positive	
+0.810398	0.189602	
+
+Not covered by the rule:
+tested_negative	tested_positive	
+0.372973	0.627027	
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         565               73.5677 %
+Incorrectly Classified Instances       203               26.4323 %
+Kappa statistic                          0.4257
+Mean absolute error                      0.3692
+Root mean squared error                  0.4313
+Relative absolute error                 81.2364 %
+Root relative squared error             90.4832 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,782    0,351    0,806      0,782    0,794      0,426    0,716     0,772     tested_negative
+                 0,649    0,218    0,615      0,649    0,632      0,426    0,716     0,522     tested_positive
+Weighted Avg.    0,736    0,304    0,739      0,736    0,737      0,426    0,716     0,685     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 391 109 |   a = tested_negative
+  94 174 |   b = tested_positive
+

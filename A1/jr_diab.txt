@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     pima_diabetes
+Instances:    768
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(plas >= 132) and (mass >= 30) => class=tested_positive (182.0/48.0)
+(age >= 29) and (insu >= 125) and (preg <= 3) => class=tested_positive (19.0/4.0)
+(age >= 31) and (pedi >= 0.529) and (preg >= 8) and (mass >= 25.9) => class=tested_positive (22.0/5.0)
+ => class=tested_negative (545.0/102.0)
+
+Number of Rules : 4
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         609               79.2969 %
+Incorrectly Classified Instances       159               20.7031 %
+Kappa statistic                          0.5259
+Mean absolute error                      0.3262
+Root mean squared error                  0.4039
+Relative absolute error                 71.7791 %
+Root relative squared error             84.7336 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,886    0,381    0,813      0,886    0,848      0,531    0,754     0,797     tested_negative
+                 0,619    0,114    0,744      0,619    0,676      0,531    0,754     0,599     tested_positive
+Weighted Avg.    0,793    0,288    0,789      0,793    0,788      0,531    0,754     0,728     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 443  57 |   a = tested_negative
+ 102 166 |   b = tested_positive
+
