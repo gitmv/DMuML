@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ConjunctiveRule -N 3 -M 2.0 -P -1 -S 1
+Relation:     contact-lenses
+Instances:    24
+Attributes:   5
+              age
+              spectacle-prescrip
+              astigmatism
+              tear-prod-rate
+              contact-lenses
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+
+
+Single conjunctive rule learner:
+--------------------------------
+ => contact-lenses = none
+
+Class distributions:
+Covered by the rule:
+soft	hard	none	
+0.1875	0.1875	0.625	
+
+Not covered by the rule:
+soft	hard	none	
+0	0	0	
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          15               62.5    %
+Incorrectly Classified Instances         9               37.5    %
+Kappa statistic                          0     
+Mean absolute error                      0.3594
+Root mean squared error                  0.4239
+Relative absolute error                 97.5733 %
+Root relative squared error             99.9335 %
+Total Number of Instances               24     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,208     soft
+                 0,000    0,000    0,000      0,000    0,000      0,000    0,500     0,167     hard
+                 1,000    1,000    0,625      1,000    0,769      0,000    0,500     0,625     none
+Weighted Avg.    0,625    0,625    0,391      0,625    0,481      0,000    0,500     0,462     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  0  0  5 |  a = soft
+  0  0  4 |  b = hard
+  0  0 15 |  c = none
+

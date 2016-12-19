@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     contact-lenses
+Instances:    24
+Attributes:   5
+              age
+              spectacle-prescrip
+              astigmatism
+              tear-prod-rate
+              contact-lenses
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(tear-prod-rate = normal) and (astigmatism = yes) => contact-lenses=hard (6.0/2.0)
+(tear-prod-rate = normal) => contact-lenses=soft (6.0/1.0)
+ => contact-lenses=none (12.0/0.0)
+
+Number of Rules : 3
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          21               87.5    %
+Incorrectly Classified Instances         3               12.5    %
+Kappa statistic                          0.7895
+Mean absolute error                      0.1204
+Root mean squared error                  0.2453
+Relative absolute error                 32.6816 %
+Root relative squared error             57.8358 %
+Total Number of Instances               24     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,053    0,833      1,000    0,909      0,889    0,974     0,833     soft
+                 1,000    0,100    0,667      1,000    0,800      0,775    0,950     0,667     hard
+                 0,800    0,000    1,000      0,800    0,889      0,775    0,922     0,945     none
+Weighted Avg.    0,875    0,028    0,910      0,875    0,878      0,798    0,938     0,876     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+  5  0  0 |  a = soft
+  0  4  0 |  b = hard
+  1  2 12 |  c = none
+

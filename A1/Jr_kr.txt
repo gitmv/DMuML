@@ -1,0 +1,100 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     kr-vs-kp
+Instances:    3196
+Attributes:   37
+              bkblk
+              bknwy
+              bkon8
+              bkona
+              bkspr
+              bkxbq
+              bkxcr
+              bkxwp
+              blxwp
+              bxqsq
+              cntxt
+              dsopp
+              dwipd
+              hdchk
+              katri
+              mulch
+              qxmsq
+              r2ar8
+              reskd
+              reskr
+              rimmx
+              rkxwp
+              rxmsq
+              simpl
+              skach
+              skewr
+              skrxp
+              spcop
+              stlmt
+              thrsk
+              wkcti
+              wkna8
+              wknck
+              wkovl
+              wkpos
+              wtoeg
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(bxqsq = t) and (rimmx = f) => class=nowin (743.0/0.0)
+(wknck = t) and (rimmx = f) and (r2ar8 = t) and (wkovl = t) => class=nowin (295.0/0.0)
+(wkpos = f) and (cntxt = f) and (rimmx = f) => class=nowin (123.0/3.0)
+(wknck = t) and (rimmx = f) and (bkxcr = t) => class=nowin (118.0/0.0)
+(wkpos = f) and (katri = n) and (bkxbq = f) and (wknck = f) and (bkblk = f) => class=nowin (82.0/4.0)
+(wknck = t) and (rimmx = f) and (skrxp = t) => class=nowin (47.0/0.0)
+(katri = b) and (bkblk = f) and (bkxbq = f) => class=nowin (35.0/0.0)
+(mulch = t) and (rimmx = f) and (katri = n) => class=nowin (32.0/0.0)
+(wknck = t) and (rimmx = f) and (bkona = t) => class=nowin (12.0/0.0)
+(rxmsq = t) and (qxmsq = f) and (bkxbq = f) => class=nowin (17.0/1.0)
+(wknck = t) and (rimmx = f) and (thrsk = t) => class=nowin (7.0/0.0)
+(hdchk = t) => class=nowin (6.0/0.0)
+(wknck = t) and (rimmx = f) and (bkon8 = t) => class=nowin (4.0/0.0)
+(wknck = t) and (rimmx = f) and (reskr = t) => class=nowin (6.0/0.0)
+(skach = t) and (bkblk = f) => class=nowin (2.0/0.0)
+ => class=won (1667.0/6.0)
+
+Number of Rules : 16
+
+
+Time taken to build model: 0.22 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3182               99.562  %
+Incorrectly Classified Instances        14                0.438  %
+Kappa statistic                          0.9912
+Mean absolute error                      0.0085
+Root mean squared error                  0.0654
+Relative absolute error                  1.7119 %
+Root relative squared error             13.0841 %
+Total Number of Instances             3196     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,995    0,004    0,996      0,995    0,996      0,991    0,998     0,996     won
+                 0,996    0,005    0,995      0,996    0,995      0,991    0,998     0,997     nowin
+Weighted Avg.    0,996    0,004    0,996      0,996    0,996      0,991    0,998     0,997     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1661    8 |    a = won
+    6 1521 |    b = nowin
+

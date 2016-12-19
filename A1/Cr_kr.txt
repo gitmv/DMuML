@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ConjunctiveRule -N 3 -M 2.0 -P -1 -S 1
+Relation:     kr-vs-kp
+Instances:    3196
+Attributes:   37
+              bkblk
+              bknwy
+              bkon8
+              bkona
+              bkspr
+              bkxbq
+              bkxcr
+              bkxwp
+              blxwp
+              bxqsq
+              cntxt
+              dsopp
+              dwipd
+              hdchk
+              katri
+              mulch
+              qxmsq
+              r2ar8
+              reskd
+              reskr
+              rimmx
+              rkxwp
+              rxmsq
+              simpl
+              skach
+              skewr
+              skrxp
+              spcop
+              stlmt
+              thrsk
+              wkcti
+              wkna8
+              wknck
+              wkovl
+              wkpos
+              wtoeg
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+
+
+Single conjunctive rule learner:
+--------------------------------
+(rimmx = t) => class = won
+
+Class distributions:
+Covered by the rule:
+won	nowin	
+1	0	
+
+Not covered by the rule:
+won	nowin	
+0.411901	0.588099	
+
+Time taken to build model: 0.28 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        2111               66.0513 %
+Incorrectly Classified Instances      1085               33.9487 %
+Kappa statistic                          0.3396
+Mean absolute error                      0.3965
+Root mean squared error                  0.4455
+Relative absolute error                 79.4471 %
+Root relative squared error             89.1896 %
+Total Number of Instances             3196     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,350    0,000    1,000      0,350    0,518      0,452    0,675     0,689     won
+                 1,000    0,650    0,585      1,000    0,738      0,452    0,675     0,585     nowin
+Weighted Avg.    0,661    0,311    0,802      0,661    0,623      0,452    0,675     0,639     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  584 1085 |    a = won
+    0 1527 |    b = nowin
+

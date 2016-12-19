@@ -1,0 +1,534 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.Prism 
+Relation:     kr-vs-kp
+Instances:    3196
+Attributes:   37
+              bkblk
+              bknwy
+              bkon8
+              bkona
+              bkspr
+              bkxbq
+              bkxcr
+              bkxwp
+              blxwp
+              bxqsq
+              cntxt
+              dsopp
+              dwipd
+              hdchk
+              katri
+              mulch
+              qxmsq
+              r2ar8
+              reskd
+              reskr
+              rimmx
+              rkxwp
+              rxmsq
+              simpl
+              skach
+              skewr
+              skrxp
+              spcop
+              stlmt
+              thrsk
+              wkcti
+              wkna8
+              wknck
+              wkovl
+              wkpos
+              wtoeg
+              class
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Prism rules
+----------
+If rimmx = t then won
+If reskd = t
+   and wkpos = t then won
+If katri = w
+   and qxmsq = t then won
+If katri = w
+   and bxqsq = f
+   and bknwy = t then won
+If katri = w
+   and bxqsq = f
+   and wkpos = t
+   and skrxp = f then won
+If wknck = f
+   and skrxp = t then won
+If wknck = f
+   and bxqsq = f
+   and bkxbq = t then won
+If qxmsq = t
+   and wkovl = f then won
+If qxmsq = t
+   and wkcti = t
+   and rxmsq = t then won
+If thrsk = t
+   and katri = w
+   and bkona = f then won
+If thrsk = t
+   and wknck = f
+   and skewr = f then won
+If wknck = f
+   and thrsk = t
+   and wkpos = t
+   and dsopp = f then won
+If wknck = f
+   and bxqsq = f
+   and qxmsq = t
+   and katri = n then won
+If wknck = f
+   and bxqsq = f
+   and wtoeg = t
+   and bkspr = t then won
+If wknck = f
+   and bxqsq = f
+   and skewr = f
+   and rxmsq = f then won
+If katri = w
+   and bxqsq = f
+   and cntxt = t
+   and bkxbq = f then won
+If bkblk = t
+   and skach = t then won
+If bkblk = t
+   and thrsk = t
+   and reskr = t then won
+If bkblk = t
+   and wkovl = t
+   and wkpos = t
+   and katri = n then won
+If r2ar8 = f
+   and katri = b
+   and simpl = f then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and r2ar8 = f then won
+If bkblk = t
+   and qxmsq = t
+   and bkxbq = f then won
+If bkblk = t
+   and thrsk = t
+   and wkcti = t then won
+If bkblk = t
+   and wkovl = t
+   and reskr = t
+   and bkxcr = f then won
+If bkblk = t
+   and wkovl = t
+   and cntxt = t
+   and dsopp = t then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and reskr = t then won
+If bkblk = t
+   and bkxcr = f
+   and bkspr = t
+   and cntxt = t then won
+If bxqsq = f
+   and bknwy = t
+   and mulch = f
+   and wkovl = t then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and bkona = t then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and bkblk = t
+   and rxmsq = f then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and katri = n
+   and bkspr = t then won
+If bxqsq = f
+   and bknwy = t
+   and mulch = f
+   and dwipd = g then won
+If reskd = t
+   and bkxbq = t
+   and mulch = f then won
+If bxqsq = f
+   and wknck = f
+   and wtoeg = t
+   and dwipd = l
+   and rxmsq = f then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and dsopp = t
+   and wtoeg = n then won
+If bxqsq = f
+   and r2ar8 = f
+   and bknwy = t
+   and simpl = f then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and wkcti = t
+   and blxwp = t then won
+If bxqsq = f
+   and r2ar8 = f
+   and dsopp = t
+   and wkpos = t
+   and skewr = t
+   and skrxp = f then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and katri = n
+   and bkxcr = t then won
+If r2ar8 = f
+   and rxmsq = t
+   and reskr = f
+   and wkcti = t then won
+If r2ar8 = f
+   and katri = b
+   and bknwy = t
+   and cntxt = t then won
+If bxqsq = f
+   and r2ar8 = f
+   and bkxcr = f
+   and skewr = f
+   and wtoeg = n
+   and mulch = f then won
+If bxqsq = f
+   and bkxcr = f
+   and wkovl = f
+   and bkona = f
+   and bkxbq = t
+   and bkspr = t then won
+If bxqsq = f
+   and bkblk = t
+   and wkovl = t
+   and cntxt = t
+   and dwipd = g then won
+If bxqsq = f
+   and wknck = f
+   and wkpos = t
+   and katri = n
+   and rxmsq = f
+   and dsopp = f then won
+If r2ar8 = f
+   and bkxcr = f
+   and bxqsq = f
+   and skrxp = f
+   and wtoeg = t
+   and simpl = f
+   and blxwp = f
+   and thrsk = f then won
+If wkcti = t
+   and reskr = f
+   and dsopp = t
+   and r2ar8 = f
+   and skach = f then won
+If wkcti = t
+   and reskr = f
+   and r2ar8 = f
+   and simpl = f
+   and wknck = f then won
+If wkcti = t
+   and reskr = f
+   and r2ar8 = f
+   and simpl = f
+   and bkxcr = f
+   and bkspr = f
+   and skach = f then won
+If bkblk = t
+   and thrsk = t
+   and cntxt = t
+   and spcop = f then won
+If bkblk = t
+   and wkovl = t
+   and cntxt = t
+   and simpl = t
+   and spcop = f then won
+If r2ar8 = f
+   and bkxcr = f
+   and simpl = t
+   and bknwy = f
+   and bkona = f
+   and bkxbq = t
+   and mulch = f
+   and bkon8 = f
+   and bxqsq = f then won
+If wkovl = f
+   and bkxcr = f
+   and wknck = t
+   and skrxp = f
+   and mulch = f
+   and r2ar8 = t
+   and bkona = f
+   and bxqsq = f
+   and bkon8 = f then won
+If r2ar8 = f
+   and bkxcr = f
+   and simpl = t
+   and bkxbq = f
+   and wtoeg = t
+   and thrsk = f
+   and skewr = t then won
+If wkcti = t
+   and reskr = f
+   and wknck = f
+   and bkblk = t
+   and cntxt = t
+   and bkspr = f then won
+If r2ar8 = f
+   and wkcti = t
+   and reskr = f
+   and wknck = f
+   and bknwy = f
+   and bkspr = f
+   and reskd = f
+   and skach = f then won
+If r2ar8 = f
+   and bkxcr = f
+   and wknck = t
+   and bkxbq = f
+   and simpl = t
+   and bknwy = f
+   and thrsk = f
+   and skrxp = f
+   and wtoeg = t then won
+If r2ar8 = f
+   and bkxcr = f
+   and wknck = t
+   and wtoeg = n
+   and bknwy = f
+   and cntxt = f
+   and bkxbq = f
+   and mulch = f then won
+If katri = b
+   and bkblk = t
+   and wkovl = t
+   and cntxt = t
+   and wkpos = f
+   and simpl = f then won
+If r2ar8 = f
+   and wkcti = t
+   and reskr = f
+   and bkxbq = f
+   and wknck = t
+   and simpl = t
+   and bknwy = f
+   and dsopp = f
+   and mulch = f
+   and reskd = f then won
+If r2ar8 = f
+   and bkxbq = t
+   and simpl = f
+   and bxqsq = f
+   and bkxcr = f
+   and bkona = f
+   and blxwp = f
+   and cntxt = f then won
+If stlmt = t then nowin
+If hdchk = t then nowin
+If spcop = t then nowin
+If wkna8 = t
+   and dwipd = g then nowin
+If skach = t
+   and bkblk = f then nowin
+If mulch = t
+   and bknwy = f then nowin
+If wkna8 = t
+   and rxmsq = t then nowin
+If wkna8 = t
+   and thrsk = t then nowin
+If bxqsq = t
+   and rimmx = f then nowin
+If skrxp = t
+   and katri = b then nowin
+If wkna8 = t
+   and r2ar8 = t
+   and bxqsq = f then nowin
+If skrxp = t
+   and rimmx = f
+   and wknck = t then nowin
+If wknck = t
+   and rimmx = f
+   and bkxcr = t then nowin
+If rxmsq = t
+   and bkxwp = t then nowin
+If rxmsq = t
+   and wknck = t
+   and bxqsq = f then nowin
+If wkna8 = t
+   and rimmx = f
+   and bknwy = f then nowin
+If mulch = t
+   and reskd = t then nowin
+If wknck = t
+   and rimmx = f
+   and blxwp = t then nowin
+If mulch = t
+   and rimmx = f
+   and katri = n then nowin
+If katri = b
+   and bkblk = f
+   and bkxbq = f then nowin
+If rxmsq = t
+   and qxmsq = f
+   and wtoeg = t then nowin
+If rxmsq = t
+   and wkpos = f
+   and bkxbq = f
+   and r2ar8 = t then nowin
+If wknck = t
+   and rimmx = f
+   and bkona = t then nowin
+If rxmsq = t
+   and qxmsq = f
+   and bkxbq = f
+   and skewr = f then nowin
+If wkpos = f
+   and katri = n
+   and reskd = t
+   and bkxbq = f then nowin
+If wknck = t
+   and rimmx = f
+   and reskr = t then nowin
+If wknck = t
+   and rimmx = f
+   and thrsk = t then nowin
+If wkpos = f
+   and bkon8 = t
+   and rimmx = f then nowin
+If wkpos = f
+   and qxmsq = t
+   and r2ar8 = t then nowin
+If wkpos = f
+   and katri = n
+   and bkxbq = f
+   and bkxwp = t
+   and bkblk = f then nowin
+If wknck = t
+   and rimmx = f
+   and bkon8 = t then nowin
+If wknck = t
+   and rimmx = f
+   and bkblk = t then nowin
+If rxmsq = t
+   and qxmsq = f
+   and bkxbq = f
+   and blxwp = t then nowin
+If wknck = t
+   and rimmx = f
+   and wkovl = t
+   and bknwy = f then nowin
+If wkpos = f
+   and katri = n
+   and bkxbq = f
+   and wkcti = f
+   and r2ar8 = f then nowin
+If wkpos = f
+   and dwipd = g
+   and thrsk = t then nowin
+If wkpos = f
+   and dwipd = g
+   and bkblk = f
+   and bkxbq = f then nowin
+If rxmsq = t
+   and qxmsq = f
+   and bkxbq = f
+   and reskr = t then nowin
+If wkna8 = t
+   and bkblk = t
+   and simpl = t then nowin
+If rxmsq = t
+   and qxmsq = f
+   and bkxbq = f
+   and bkblk = t then nowin
+If wkpos = f
+   and katri = n
+   and bkxbq = f
+   and wkcti = f
+   and bkblk = f
+   and bxqsq = f then nowin
+If rxmsq = t
+   and qxmsq = f
+   and bkxbq = f
+   and dsopp = f
+   and bxqsq = f then nowin
+If wkna8 = t
+   and rimmx = f
+   and simpl = t then nowin
+If wkpos = f
+   and katri = n
+   and bkxbq = f
+   and wknck = f
+   and rkxwp = t
+   and bkblk = f then nowin
+If wkpos = f
+   and bkona = t
+   and rimmx = f
+   and bkblk = f then nowin
+If wkpos = f
+   and katri = n
+   and bkxbq = f
+   and wknck = f
+   and bkblk = f
+   and reskr = t then nowin
+If thrsk = t
+   and dsopp = t
+   and dwipd = g then nowin
+If wkpos = f
+   and katri = n
+   and bkxbq = f
+   and wknck = f
+   and bkblk = f
+   and r2ar8 = t then nowin
+If dsopp = t
+   and dwipd = g
+   and wtoeg = t
+   and skewr = t
+   and bkxbq = f then nowin
+If wkpos = f
+   and bkspr = t
+   and simpl = t
+   and katri = n
+   and rimmx = f
+   and bkxbq = f then nowin
+
+
+Time taken to build model: 0.31 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.07 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        3196              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             3196     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     won
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     nowin
+Weighted Avg.    1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1669    0 |    a = won
+    0 1527 |    b = nowin
+
